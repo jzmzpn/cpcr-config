@@ -1,0 +1,28 @@
+server:
+  port: 8012
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+
+  routes:
+    boss:
+        path: /boss/**
+        serviceId: cpcr-micro-boss
+
+logging:
+  file: ./log/cpcr-micro-gateway.log

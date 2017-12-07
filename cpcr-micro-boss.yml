@@ -1,0 +1,5 @@
+server:
+  port: 8014
+
+logging:
+  file: ./log/cpcr-micro-boss.log
