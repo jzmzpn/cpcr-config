@@ -24,4 +24,4 @@ management:
   security:
     enabled: false
 
-nova: goodjob212
+nova: adamjiang
