@@ -4,6 +4,22 @@ server:
 logging:
   file: ./log/cpcr-micro-auth.log
 
+
+spring:
+  cloud:
+    bus:
+      trace:
+        enable: true
+  rabbitmq:
+    host: 111.230.38.240
+    port: 5672
+    username: nova
+    password: Nova2017
+
+
 management:
   security:
     enabled: false
+
+
+nova: aaaa
