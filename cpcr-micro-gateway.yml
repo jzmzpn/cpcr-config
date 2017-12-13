@@ -24,5 +24,9 @@ zuul:
         path: /boss/**
         serviceId: cpcr-micro-boss
 
+management:
+  security:
+    enabled: false
+
 logging:
   file: ./log/cpcr-micro-gateway.log

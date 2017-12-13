@@ -3,3 +3,13 @@ server:
 
 logging:
   file: ./log/cpcr-micro-boss.log
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+nova: hello
