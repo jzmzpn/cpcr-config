@@ -8,6 +8,20 @@ feign:
   hystrix:
     enabled: true
 
+
+spring:
+  cloud:
+    bus:
+      trace:
+        enable: true
+
+spring:
+  rabbitmq:
+    host: 111.230.38.240
+    port: 5672
+    username: nova
+    password: Nova2017
+
 management:
   security:
     enabled: false
