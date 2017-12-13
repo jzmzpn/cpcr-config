@@ -14,8 +14,6 @@ spring:
     bus:
       trace:
         enable: true
-
-spring:
   rabbitmq:
     host: 111.230.38.240
     port: 5672
